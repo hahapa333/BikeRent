@@ -8,10 +8,10 @@ if [ ! -f "$ENV_FILE" ]; then
     echo "Создаю .env файл..."
     cat <<EOF > $ENV_FILE
 # Database configuration
-DB_SERVER=localhost
-DB_NAME=BikeRent
-DB_USER=biker_user
-DB_PASSWORD=StrongP@ssw0rd123
+DB_SERVER=localhost,1433
+DB_NAME=BikeRentDB
+DB_USER=sa
+DB_PASSWORD=YourStrongPassword123
 DB_DRIVER=ODBC Driver 18 for SQL Server
 EOF
     echo ".env файл создан ✅"
